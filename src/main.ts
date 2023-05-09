@@ -1,1 +1,1 @@
-console.log("FFFFF")
+console.log('FFFFF');
