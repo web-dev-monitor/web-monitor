@@ -1,4 +1,6 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { html } from 'lit';
+// eslint-disable-next-line import/no-extraneous-dependencies,import/extensions
 import { styleMap } from 'lit/directives/style-map.js';
 import './button.css';
 
@@ -27,13 +29,25 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, onClick }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({
+  primary,
+  backgroundColor,
+  size,
+  label,
+  onClick,
+}: ButtonProps) => {
+  const mode = primary
+    ? 'storybook-button--primary'
+    : 'storybook-button--secondary';
 
   return html`
     <button
       type="button"
-      class=${['storybook-button', `storybook-button--${size || 'medium'}`, mode].join(' ')}
+      class=${[
+        'storybook-button',
+        `storybook-button--${size || 'medium'}`,
+        mode,
+      ].join(' ')}
       style=${styleMap({ backgroundColor })}
       @click=${onClick}
     >
