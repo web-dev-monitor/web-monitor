@@ -1,12 +1,1 @@
-const a = 'ss';
-const b = 'ss';
-const c = 'ss';
-const d = 'ss';
-const e = 'ss';
-const f = 'ss';
-const g = 'ss';
-const h = 'ss';
-const i = 'ss';
-const j = 'ss';
-const k = 'ss';
 console.log('FFFFF');
